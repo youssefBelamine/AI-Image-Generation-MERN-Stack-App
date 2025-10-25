@@ -4,7 +4,7 @@ import { Card, FormField, Loader } from "@/components";
 const Home = () => {
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState(null);
-  const [searchText, setSearchText] = useState('youssef');
+  const [searchText, setSearchText] = useState('');
 
   const RenderCards = React.memo(({data, title}) => {
     if(data?.length > 0) {

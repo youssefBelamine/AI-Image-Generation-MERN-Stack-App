@@ -21,7 +21,10 @@ const FormField = ({
           {LabelName}{" "}
         </label>
         {isSurpriseMe && (
-          <button className="font-semibold text-xs bg-[#ECECF1] py-1 px-2 rounded-[5px] text-black">
+          <button 
+          type="button"
+          onClick={handleSurpriseMe}
+           className="font-semibold text-xs bg-[#ECECF1] py-1 px-2 rounded-[5px] text-black">
             Surprise me
           </button>
         )}
@@ -34,8 +37,8 @@ const FormField = ({
         value={value}
         onChange={handleChange}
         required
-        className="bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#6469FF] focus:BORDER-[#6469FF] 
-         focus:border-[#4649FF] outline-none block w-full p-3"
+        className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#6469FF]
+         focus:border-[#4649FF] outline-none block p-3"
       />
     </div>
   );
